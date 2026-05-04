@@ -6,8 +6,8 @@ Simple indoor sports booking app repository.
 
 ## Structure
 
-- ackend/ — Node.js and MongoDB backend code
-- rontend/ — static frontend HTML
+- backend/ — Node.js and MongoDB backend code
+- frontend/ — static frontend HTML
 
 ## Setup
 
@@ -18,5 +18,5 @@ ode backend/server.js
 
 ## Notes
 
-- The frontend should load from rontend/index.html.
+- The frontend should load from frontend/index.html.
 - Keep .env out of version control.
