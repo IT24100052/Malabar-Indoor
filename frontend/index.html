@@ -3772,7 +3772,7 @@
        ═══════════════════════════════════════════════════════ */
 
     // ── DATA ──────────────────────────────────────────────
-    const API_BASE = 'http://localhost:5050/api';
+    const API_BASE = `http://${window.location.hostname}:5050/api`;
     const COURTS_DATA = [
       null, // Index 0 is unused for 1-based IDs
       { id: 1, name: 'Court 1', sports: ['Cricket', 'Football'], icon: '🏏', maxP: '10–12', provides: 'Football' },
