@@ -1,0 +1,7 @@
+{
+  "name": "malabar-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx http-server ./ -p 3001"
+  }
+}

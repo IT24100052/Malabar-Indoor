@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "backend": "nodemon backend/server.js",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "npx concurrently \"npm run backend\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",

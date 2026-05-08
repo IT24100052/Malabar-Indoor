@@ -4,7 +4,7 @@
 // ══════════════════════════════════════════════════════════════
 
 // ── CONFIG ──
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'http://localhost:5050/api';
 let currentUser = null;
 let authToken = null;
 
@@ -290,7 +290,7 @@ function loadFAQs() {
   const faqs = [
     { q: 'How do I book a court?', a: 'Click "Book a Court" and select your date, court, and time slots. Payment must be made within 15 minutes.' },
     { q: 'What are the operating hours?', a: 'We are open from 8 AM to 1 AM daily for your convenience.' },
-    { q: 'Can I reschedule my booking?', a: 'Yes, you can reschedule once per booking if cancelled 12+ hours in advance.' },
+    { q: 'Can I reschedule  neebooking?', a: 'Yes, you can reschedule once per booking if cancelled 12+ hours in advance.' },
     { q: 'What is your cancellation policy?', a: 'No refunds for cancellations, but rescheduling is allowed if cancelled 12+ hours before.' },
     { q: 'Do you provide equipment?', a: 'Footballs are provided for Courts 1-3. Cricket equipment and badminton rackets must be brought.' }
   ];
