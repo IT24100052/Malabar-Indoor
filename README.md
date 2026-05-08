@@ -2,6 +2,8 @@
 
 A premium, full-stack management platform for Malabar Indoor Park, designed to handle multi-sport court bookings (Cricket, Football, Badminton), user profiles, and administrative oversight.
 
+**🌐 Live Demo**: [malabar-indoor.vercel.app](https://malabar-indoor.vercel.app)
+
 ## 🚀 Features
 
 ### For Users
