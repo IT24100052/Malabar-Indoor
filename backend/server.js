@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 5050;
 app.use(cors());
 app.use(express.json());
 
-// Serve static assets from the frontend directory
-app.use(express.static(path.join(__dirname, '../frontend')));
+// Serve static assets from the root directory
+app.use(express.static(path.join(__dirname, '..')));
 
 mongoose.connect(process.env.MONGODB_URI)
   .then(async () => {
