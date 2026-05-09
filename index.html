@@ -3776,10 +3776,7 @@
     
     // Check for Mixed Content issues (HTTPS site trying to call HTTP localhost)
     if (window.location.protocol === 'https:' && API_BASE.startsWith('http:')) {
-      console.warn("⚠️ Deployment Warning: You are accessing this site via HTTPS, but the API_BASE is set to HTTP. Browser security (Mixed Content) will block these requests. Please use a local URL (http://) for development or deploy your backend to an HTTPS endpoint.");
-      setTimeout(() => {
-        toast('Connection Warning: HTTPS sites cannot connect to a local HTTP backend. Please use the local version of the site.', 'error');
-      }, 2000);
+      console.warn("⚠️ Deployment Warning: This site is running via HTTPS but the backend is on HTTP. API calls will be blocked by the browser (Mixed Content policy). For a live deployment, host the backend on an HTTPS endpoint.");
     }
     const COURTS_DATA = [
       null, // Index 0 is unused for 1-based IDs
