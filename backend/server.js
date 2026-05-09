@@ -16,6 +16,7 @@ const allowedOrigins = [
   'http://localhost:5050',
   'http://127.0.0.1:3001',
   'https://it24100052.github.io',          // GitHub Pages
+  'https://malabar-indoor.onrender.com',   // Render (self)
   /^https:\/\/.*\.vercel\.app$/,           // Any Vercel deployment
   /^https:\/\/.*\.onrender\.com$/,         // Render preview URLs
 ];

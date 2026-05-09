@@ -3776,7 +3776,7 @@
     const IS_LOCAL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     const API_BASE = IS_LOCAL
       ? `http://localhost:5050/api`
-      : `https://malabar-indoor-backend.onrender.com/api`;
+      : `https://malabar-indoor.onrender.com/api`;
     
     // Check for Mixed Content issues (HTTPS site trying to call HTTP localhost)
     if (window.location.protocol === 'https:' && API_BASE.startsWith('http:')) {
