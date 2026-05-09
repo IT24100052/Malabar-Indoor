@@ -10,7 +10,27 @@ const { User, Booking, Pricing, Notice, Feedback, Gallery } = require('./models'
 const app = express();
 const PORT = process.env.PORT || 5050;
 
-app.use(cors());
+// CORS — allow local dev, GitHub Pages, and Vercel frontends
+const allowedOrigins = [
+  'http://localhost:3001',
+  'http://localhost:5050',
+  'http://127.0.0.1:3001',
+  'https://it24100052.github.io',          // GitHub Pages
+  /^https:\/\/.*\.vercel\.app$/,           // Any Vercel deployment
+  /^https:\/\/.*\.onrender\.com$/,         // Render preview URLs
+];
+app.use(cors({
+  origin: (origin, callback) => {
+    // Allow requests with no origin (e.g. curl, Postman, server-to-server)
+    if (!origin) return callback(null, true);
+    const allowed = allowedOrigins.some(o =>
+      typeof o === 'string' ? o === origin : o.test(origin)
+    );
+    if (allowed) return callback(null, true);
+    return callback(new Error(`CORS policy: origin ${origin} not allowed`));
+  },
+  credentials: true,
+}));
 app.use(express.json());
 
 // Serve static assets from the root directory
