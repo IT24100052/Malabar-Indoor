@@ -238,7 +238,7 @@ app.delete('/api/gallery/:id', async (req, res) => {
 
 // Root: Serve frontend
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'frontend', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '..', 'index.html'));
 });
 
 app.put('/api/users/:id', async (req, res) => {

@@ -4,7 +4,7 @@
 // ══════════════════════════════════════════════════════════════
 
 // ── CONFIG ──
-const API_BASE = `http://${window.location.hostname}:5050/api`;
+const API_BASE = `http://${window.location.hostname || 'localhost'}:5050/api`;
 let currentUser = null;
 let authToken = null;
 
